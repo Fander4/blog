@@ -11,7 +11,7 @@ header {
     color: #fff;
     padding-top: 20px;
     min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    border-bottom: #0779e4 5px solid;
 }
 
 header h1, header nav {
@@ -32,14 +32,47 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/*
 section#about-me {
-    margin: 20px 10%;
+    margin: 20px 10% 20px 15%;  (top, right, bottom, left) comment
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}*/
+
+/* Deixa a imagem e o about me juntos e lado a lado */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 10% 20px 15%; /* Adjust margin as needed */
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px #ccc;
 }
 
+.about-me-image {
+    flex: 0 0 auto; /* Do not grow, do not shrink */
+    margin-right: 20px; /* Add margin between image and text */
+    width: 200px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-me-text {
+    flex: 1; /* Grow to fill remaining space */
+}
+
+/* Additional styling for consistency */
+.about-me-text h2 {
+    margin-top: 0; /* Remove margin from the top of h2 */
+}
+
+.about-me-text p {
+    margin-bottom: 0; /* Remove margin from the bottom of p */
+}
+/*-----*/
+
 footer {
+    border-top: #0779e4 5px solid;
     background-color: #333;
     color: #fff;
     text-align: center;
