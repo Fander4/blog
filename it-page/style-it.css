@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0779e4 5px solid;
+}
+
+header h1, header nav {
+    margin: 0 10%;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    border-top: #0779e4 5px solid;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+main#it-topics {
+    margin: 20px; /* Adjust margin as needed */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Background color for topics section */
+    border-radius: 10px; /* Rounded corners for topics section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for topics section */
+}
+
+/* Styling for the divider */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.topic {
+    margin-bottom: 40px; /* Spacing between topics */
+    position: relative;
+}
+
+.topic h1 {
+    color: #333; /* Color for topic headings */
+}
+.topic h2 {
+    color: #333; /* Color for topic headings */
+}
+.topic h3 {
+    color: #333; /* Color for topic headings */
+}
+
+.topic p {
+    color: #666; /* Color for metadata (date, author) */
+    margin-bottom: 10px; /* Spacing between metadata and content */
+}
+
+.topic img {
+    margin-top: 20px; /* Spacing between image and content */
+    max-width: 100%; /* Ensure images are not larger than their container */
+    height: auto; /* Maintain aspect ratio of images */
+}
+
+.blog-content {
+    text-align: justify; /* Justify text for a cleaner look */
+}
+
+.blog-content a {
+    color: #0779e4; /* Link color */
+    text-decoration: none; /* Remove default underline from links */
+    font-weight: bold; /* Bold font weight for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.blog-content a:hover {
+    color: #055aa0; /* Darker color on hover for links */
+}
+
+.go-back {
+    position: absolute; /* Positions the button absolutely within its nearest positioned ancestor */
+    top: 10px; /* Adjusts the top position */
+    right: 10px; /* Adjusts the right position */
+    padding: 5px 10px;
+    background-color: #0779e4;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+}
