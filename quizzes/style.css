@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0779e4 5px solid;
+}
+
+header h1, header nav {
+    margin: 0 10%;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    border: 1px solid black; 
+    margin: 75px; 
+    padding: 20px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+footer {
+    border-top: #0779e4 5px solid;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*
+section#about-me {
+    margin: 20px 10% 20px 15%;  (top, right, bottom, left) comment
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}*/
+
+/* Deixa a imagem e o about me juntos e lado a lado */
+/* Secção do sobre mim */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 20px 30% 20px 30%; /* Adjust margin as needed */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.about-me-image {
+    flex: 0 0 auto; /* Do not grow, do not shrink */
+    margin-right: 20px; /* Add margin between image and text */
+    width: 200px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-me-text {
+    flex: 1; /* Grow to fill remaining space */
+}
+
+/* Additional styling for consistency */
+.about-me-text h2 {
+    margin-top: 0; /* Remove margin from the top of h2 */
+}
+
+.about-me-text p {
+    margin-bottom: 0; /* Remove margin from the bottom of p */
+}
+/*------------------------------------------------------------------*/
+
+/* Secção das sugestões*/
+.content-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section, .ads-section {
+    flex: 1;
+}
+
+/* Adds margin to ads-section but you can adjust as needed */
+.ads-section {
+    margin-left: 20px;
+}
+
+/* Styling for the divider */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0;
+}
+
+.most-popular, .what-to-watch {
+    margin-bottom: 20px;
+}
+
+.most-popular h2, .what-to-watch h2 {
+    margin-bottom: 10px;
+}
+
+/* Adjusts to ensure there is no space between list items and they are visually distinct */
+.content-wrapper2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-wrapper2 ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.content-wrapper2 ul li a:hover {
+    color: #333;
+}
+
+/* Ensure ads are visually appealing */
+.ads-section img {
+    width: 100%; /* Adjust width as necessary */
+    height: auto; /* Adjust height as necessary */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*-----------------------------------------------------*/
+
+#my-projects {
+    margin: 20px 15% 20px 15%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#my-projects h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project, .instagram-gallery {
+    margin-bottom: 20px;
+}
+
+.discord-invite {
+    display: inline-block;
+    background-color: #7289da;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.discord-invite:hover {
+    background-color: #5b6eae;
+}
+
+.instagram-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between images */
+}
+
+.instagram-gallery .gallery img {
+    flex: 1;
+    max-width: calc(33.333% - 10px); /* Adjust based on number of images per row */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*-------------------------------------------------------------*/
