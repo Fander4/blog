@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyJesusBlog</title><link rel="icon" href="../imgs/jesus.jpg">
+    <title>MyJesusBlog Forum</title>
+    <link rel="icon" href="../imgs/jesus.jpg">
     <link rel="stylesheet" href="styleforum.css">
 </head>
 <body>
     <header>
-        <h1>Fórum de MyJesusBlog</h1>
+        <h1>MyJesusBlog Forum</h1>
         <nav>
             <ul>
                 <li><a href="../home.html">Home</a></li>
@@ -19,22 +20,40 @@
     </header>
     
     <main>
+        <!-- Forum Categories -->
         <section class="forum-section">
-            <h2>Tópicos Recentes</h2>
-            <div class="topic">
-                <h3><a href="#">Título do Tópico 1</a></h3>
-                <p>Descrição breve do tópico 1...</p>
+            <h2>Forum Categories</h2>
+            <!-- Example Category 1 -->
+            <div class="category">
+                <h3><a href="#">Ai</a></h3>
+                <div class="posts">
+                    <div class="post">
+                        <h4><a href="#">Tópico 1</a></h4>
+                        <p>Última postagem por: Usuário123 em 05/03/2024</p>
+                    </div>
+                    <div class="post">
+                        <h4><a href="#">Tópico 2</a></h4>
+                        <p>Última postagem por: Usuário456 em 04/03/2024</p>
+                    </div>
+                </div>
             </div>
-            <div class="topic">
-                <h3><a href="#">Título do Tópico 2</a></h3>
-                <p>Descrição breve do tópico 2...</p>
-            </div>
-            <!-- Adicione mais tópicos conforme necessário -->
+            <!-- Add more categories as needed -->
+        </section>
+        
+        <!-- New Topic Creation -->
+        <section class="new-topic">
+            <h2>Criar Novo Tópico</h2>
+            <form>
+                <input type="text" placeholder="Título do Tópico" required>
+                <textarea placeholder="Escreva sua mensagem..." required></textarea>
+                <button type="submit">Postar Tópico</button>
+            </form>
         </section>
     </main>
     
     <footer>
         <p>&copy; 2024 Fander4 | All rights are reserved</p>
     </footer>
+
 </body>
 </html>
