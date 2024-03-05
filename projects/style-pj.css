@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('../waves.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header, footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    position: fixed;
+    width: 80%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+header h1, footer p {
+    margin: 0;
+    font-weight: 700;
+}
+
+header nav ul, footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li, footer nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover, footer nav ul li a:hover {
+    color: #0779e4;
+}
+
+main {
+    margin-top: 100px; /* Adjust based on header height */
+    margin-bottom: 100px; /* Adjust based on footer height */
+    padding: 20px;
+    color: #333;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Showcase Pictures/Images Section */
+#image-showcase {
+    display: none; /* Hide the image showcase section */
+}
+
+/* Discord Server Section */
+#discord-server {
+    margin: 20px 30%; /* Adjust margin as needed */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#discord-server h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Gallery Styles */
+#gallery {
+    margin: 20px 5%; /* Adjust based on your layout */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#gallery h2 {
+    margin-top: 0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display three items per row */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide parts of the image that overflow the container */
+    border-radius: 5px; /* Optional: rounds the corners of the containers */
+    height: 200px; /* Set a fixed height for each image container */
+}
+
+.gallery-item img {
+    height: 100%; /* Make images fill the container height */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
+    min-width: 50%; /* Ensure the image covers the width */
+    object-fit: cover; /* Cover the container without distorting the image */
+}
+
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 10px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0;
+}

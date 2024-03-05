@@ -1,21 +1,19 @@
-/* CSS for Form Container */
 .form-container {
     display: flex;
-    justify-content: center; /* Horizontally center the forms */
-    align-items: center; /* Vertically center the forms */
-    height: 50vh; /* Set the container height to the full viewport height */
+    justify-content: center; 
+    align-items: center;
+    height: 50vh; /* Define a altura do container como metade da altura da viewport */
 }
 
-/* Additional CSS for Sign-in Form and Sign-up Form */
 .signin-form, .signup-form {
-    width: 300px; /* Set the width of the forms */
+    width: 300px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* This will center the form items horizontally */
+    align-items: center;
 }
 
 .signin-form h2, .signup-form h2 {
@@ -24,7 +22,7 @@
 }
 
 .signin-form input, .signup-form input, .signin-form button, .signup-form button {
-    width: calc(100% - 20px); /* Adjust width to account for padding */
+    width: calc(100% - 20px);
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -47,6 +45,13 @@
     background-color: #555;
 }
 
-body{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('../waves.gif');
+    background-size: cover; /* Cobre a página toda */
+    background-position: center; 
+    background-attachment: fixed; /* Faz com que a imagem fica fixa com scroll up and down */
 }
